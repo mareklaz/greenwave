@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function CallToActions() {
 	return (
 		<div className='bg-primary-900'>
@@ -10,11 +12,11 @@ export default function CallToActions() {
 					</h2>
 
 					<div className='mt-10 flex items-center justify-center gap-x-6'>
-						<a
-							href='#'
+						<Link
+							to='/'
 							className='rounded-md bg-primary-600 px-3.5 py-2.5 text-sm font-semibold text-primary-50  shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600'>
 							Request a Demo
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>

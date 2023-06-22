@@ -46,7 +46,7 @@ const navigation = {
 
 export default function Footer() {
 	return (
-		<footer className='bg-green-50' aria-labelledby='footer-heading'>
+		<footer className='bg-primary-100' aria-labelledby='footer-heading'>
 			<h2 id='footer-heading' className='sr-only'>
 				Footer
 			</h2>
@@ -56,22 +56,22 @@ export default function Footer() {
 						<div className='md:grid md:grid-cols-1 md:gap-8'>
 							<div className='mt-10 md:mt-0'>
 								<h3 className='text-sm font-semibold leading-6 text-primary-900'>Green Wave</h3>
-								<p className='text-sm leading-6 text-primary-600 hover:text-primary-900'>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam fugiat
-									exercitationem nulla modi, voluptas impedit inventore dolorum! Illum, dolores
-									sunt.
+								<p className='mt-2 text-sm leading-6 text-primary-600 hover:text-primary-900'>
+									Join the Green Wave community and make a difference with every purchase. Calculate
+									your carbon footprint, offset emissions, and support ocean conservation. Together,
+									we create a sustainable future for our planet. Ride the Green Wave today!
 								</p>
 							</div>
 						</div>
 						<div className='flex justify-center'>
 							<div className='mt-10 md:mt-0'>
-								<h3 className='text-sm font-semibold leading-6 text-primary-900'>Links</h3>
-								<ul role='list' className='mt-6 space-y-4'>
+								{/* <h3 className='text-sm font-semibold leading-6 text-primary-900'>Links</h3> */}
+								<ul role='list' className='mt-6 space-y-4 sm:mt-0'>
 									{navigation.items.map((item) => (
 										<li key={item.name}>
 											<a
 												href={item.href}
-												className='text-sm leading-6 text-primary-600 hover:text-primary-900'>
+												className='text-sm font-semibold leading-6 text-primary-600 hover:text-primary-900'>
 												{item.name}
 											</a>
 										</li>
@@ -123,7 +123,7 @@ export default function Footer() {
 						))}
 					</div>
 					<p className='mt-8 text-xs leading-5 text-primary-500 md:order-1 md:mt-0'>
-						&copy; 2020 Your Company, Inc. All rights reserved.
+						&copy; 2023 Green Wave. All rights reserved.
 					</p>
 				</div>
 			</div>

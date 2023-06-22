@@ -4,7 +4,7 @@ const products = [
 		title: 'Legitimacy',
 		subtitle: 'Gain credibiity and trust',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corrupti iure ex labore quia autem voluptate, a cupiditate aliquam voluptatibus?',
+			'Green Wave’s adherence to international standards and certifications provides your business with legitimacy in its sustainability efforts.',
 		imageSrc:
 			'https://images.unsplash.com/photo-1671106956521-bf63702c82b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
 		imageAlt: 'Gain credibiity and trust',
@@ -14,7 +14,7 @@ const products = [
 		title: 'Impact',
 		subtitle: 'Participate in projects',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corrupti iure ex labore quia autem voluptate, a cupiditate aliquam voluptatibus?',
+			'Your business will make  a positive impact on the environment. You’re helping to reduce plastic pollution 30%. (2,3 tons)',
 		imageSrc:
 			'https://images.unsplash.com/photo-1590682680695-43b964a3ae17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
 		imageAlt: 'Participate in projects',
@@ -24,7 +24,7 @@ const products = [
 		title: 'Tracability',
 		subtitle: 'Monitor and meassure',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corrupti iure ex labore quia autem voluptate, a cupiditate aliquam voluptatibus?',
+			'Throughout the traceability that we offer,  your company will measure environmental outcomes of the projects you support.',
 		imageSrc:
 			'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
 		imageAlt: 'Monitor and meassure',
@@ -34,7 +34,7 @@ const products = [
 		title: 'Transparency',
 		subtitle: 'Accountability',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corrupti iure ex labore quia autem voluptate, a cupiditate aliquam voluptatibus?',
+			'Our value proposition is to give our customers and stakeholders full transparency of their environmental imapct.',
 		imageSrc:
 			'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80',
 		imageAlt: 'Accountability',

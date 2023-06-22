@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Articles() {
 	return (
 		<div className='bg-primary-50'>
@@ -5,7 +7,7 @@ export default function Articles() {
 				{/* Details section */}
 				<section aria-labelledby='details-heading'>
 					<div className='mt-16 grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-8'>
-						<div>
+						<div className='flex flex-col items-center'>
 							<div className='aspect-h-2 aspect-w-3 w-full overflow-hidden rounded-lg'>
 								<img
 									src='https://images.unsplash.com/photo-1616449973117-0e1d99c56ed3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80'
@@ -19,12 +21,18 @@ export default function Articles() {
 								Individuals
 							</h2>
 							<p className='mt-8 text-base text-primary-500'>
-								The 20L model has enough space for 370 candy bars, 6 cylinders of chips, 1220
-								standard gumballs, or any combination of on-the-go treats that your heart desires.
-								Yes, we did the math.
+								Take your sustainable shopping journey to the next level with our dedicated Green
+								Wave app. Seamlessly connect with yoour favourtie e-commerce platforms and discover
+								a wide range of eco-friendly products- Track your carbon foot frint, measure your
+								plastic waste redusction and contribute to saving our oceans.
 							</p>
+							<Link
+								to='/'
+								className='mt-6 w-40 rounded-full bg-primary-600 px-4 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600'>
+								Learn More
+							</Link>
 						</div>
-						<div>
+						<div className='flex flex-col items-center'>
 							<div className='aspect-h-2 aspect-w-3 w-full overflow-hidden rounded-lg'>
 								<img
 									src='https://images.unsplash.com/photo-1606185540834-d6e7483ee1a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
@@ -38,9 +46,16 @@ export default function Articles() {
 								Companies
 							</h2>
 							<p className='mt-8 text-base text-primary-500'>
-								Up your snack organization game with multiple compartment options. The quick-access
-								stash pouch is ready for even the most unexpected snack attacks and sharing needs.
+								Request a demo to explire how our platform enables you to embed sustainability into
+								your operations, reduce your carbon foorprint, and enhace your corporate
+								responsability efforts. New opportunities for your employees to increase their
+								awarness of sustainability.
 							</p>
+							<Link
+								to='/'
+								className='mt-6 w-40 rounded-full bg-primary-600 px-4 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600'>
+								Learn More
+							</Link>
 						</div>
 					</div>
 				</section>
