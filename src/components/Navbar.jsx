@@ -90,9 +90,8 @@ export default function Navbar() {
 					<Disclosure.Panel className='md:hidden'>
 						<div className='space-y-1 px-2 pb-3 pt-2 sm:px-3'>
 							{navigation.map((item) => (
-								<Disclosure.Button
+								<NavLink
 									key={item.name}
-									as='a'
 									to={item.to}
 									className={classNames(
 										item.current
@@ -101,18 +100,20 @@ export default function Navbar() {
 										'block rounded-md px-3 py-2 text-base font-medium'
 									)}
 									aria-current={item.current ? 'page' : undefined}>
-									{item.name}
-								</Disclosure.Button>
+									<Disclosure.Button>{item.name}</Disclosure.Button>
+								</NavLink>
 							))}
 						</div>
 						<div className='border-t border-primary-700 pb-3 pt-4'>
 							<div className='flex items-center px-5 sm:px-6'>
-								<button
-									type='button'
-									className='relative inline-flex items-center gap-x-1.5 rounded-md bg-primary-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500'>
-									<ArrowDownTrayIcon className='-ml-0.5 h-5 w-5' aria-hidden='true' />
-									Start & Download
-								</button>
+								<Disclosure.Button>
+									<Link
+										to='#'
+										className='relative inline-flex items-center gap-x-1.5 rounded-md bg-primary-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500'>
+										<ArrowDownTrayIcon className='-ml-0.5 h-5 w-5' aria-hidden='true' />
+										Start & Download
+									</Link>
+								</Disclosure.Button>
 							</div>
 						</div>
 					</Disclosure.Panel>
