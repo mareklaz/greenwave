@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon, ArrowDownTrayIcon } from '@heroicons/react/24/outline';
 import { Link, NavLink } from 'react-router-dom';
-
+import LOGO from '../assets/logo.svg';
 const user = {
 	name: 'Tom Cook',
 	email: 'tom@example.com',
@@ -27,7 +27,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
 	return (
-		<Disclosure as='nav' className='navbar-fixed bg-primary-800 shadow-sm'>
+		<Disclosure as='nav' className='navbar-fixed bg-secondary-950 shadow-sm'>
 			{({ open }) => (
 				<>
 					<div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
@@ -48,13 +48,13 @@ export default function Navbar() {
 									<Link to='/'>
 										<img
 											className='block h-8 w-auto lg:hidden'
-											src='https://tailwindui.com/img/logos/mark.svg?color=primary&shade=500'
-											alt='Your Company'
+											src={LOGO}
+											alt='Green Wave Company'
 										/>
 										<img
 											className='hidden h-8 w-auto lg:block'
-											src='https://tailwindui.com/img/logos/mark.svg?color=primary&shade=500'
-											alt='Your Company'
+											src={LOGO}
+											alt='Green Wave Company'
 										/>
 									</Link>
 								</div>
@@ -65,8 +65,8 @@ export default function Navbar() {
 											to={item.to}
 											className={({ isActive }) =>
 												isActive
-													? 'rounded-md bg-primary-900 px-3 py-2 text-sm font-medium text-white'
-													: 'rounded-md px-3 py-2 text-sm font-medium text-primary-300 hover:bg-primary-700 hover:text-white'
+													? 'rounded-md bg-secondary-400 px-3 py-2 text-sm font-medium text-white'
+													: 'rounded-md px-3 py-2 text-sm font-medium text-secondary-300 hover:bg-secondary-700 hover:text-white'
 											}
 											aria-current={item.current ? 'page' : undefined}>
 											{item.name}

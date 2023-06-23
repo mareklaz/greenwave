@@ -32,7 +32,7 @@ export default function Hero() {
 						</h2>
 					</div>
 				</div> */}
-				<div className='mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40'>
+				<div className='sm:py-23 mx-auto max-w-7xl px-6 py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-24'>
 					<div className='mx-auto max-w-4xl lg:mx-0 lg:flex-auto'>
 						<h1 className='mt-10 max-w-lg text-4xl font-bold tracking-tight text-white sm:text-6xl'>
 							Ride the Green Wave, shop smarter:
@@ -47,7 +47,7 @@ export default function Hero() {
 						<svg
 							viewBox='0 0 366 729'
 							role='img'
-							className='mx-auto w-[22.875rem] max-w-full drop-shadow-xl'>
+							className='mx-auto w-[16.875rem] max-w-full drop-shadow-xl'>
 							<title>App screenshot</title>
 							<defs>
 								<clipPath id='2ade4387-9c63-4fc4-b754-10e687a0d332'>

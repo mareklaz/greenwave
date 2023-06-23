@@ -1,3 +1,5 @@
+import LOGO from '../../assets/logo.svg';
+
 const navigation = {
 	items: [
 		{ name: 'About us', href: '#' },
@@ -46,7 +48,7 @@ const navigation = {
 
 export default function Footer() {
 	return (
-		<footer className='bg-primary-100' aria-labelledby='footer-heading'>
+		<footer className='bg-secondary-100' aria-labelledby='footer-heading'>
 			<h2 id='footer-heading' className='sr-only'>
 				Footer
 			</h2>
@@ -55,8 +57,9 @@ export default function Footer() {
 					<div className='grid grid-cols-2 gap-8 xl:col-span-2'>
 						<div className='md:grid md:grid-cols-1 md:gap-8'>
 							<div className='mt-10 md:mt-0'>
-								<h3 className='text-sm font-semibold leading-6 text-primary-900'>Green Wave</h3>
-								<p className='mt-2 text-sm leading-6 text-primary-600 hover:text-primary-900'>
+								<img className='mb-4 h-8 w-auto ' src={LOGO} alt='Green Wave Company' />
+								<h3 className='text-sm font-semibold leading-6 text-secondary-900'>Green Wave</h3>
+								<p className='mt-2 text-sm leading-6 text-secondary-600 hover:text-secondary-900'>
 									Join the Green Wave community and make a difference with every purchase. Calculate
 									your carbon footprint, offset emissions, and support ocean conservation. Together,
 									we create a sustainable future for our planet. Ride the Green Wave today!
@@ -65,13 +68,13 @@ export default function Footer() {
 						</div>
 						<div className='flex justify-center'>
 							<div className='mt-10 md:mt-0'>
-								{/* <h3 className='text-sm font-semibold leading-6 text-primary-900'>Links</h3> */}
+								{/* <h3 className='text-sm font-semibold leading-6 text-secondary-900'>Links</h3> */}
 								<ul role='list' className='mt-6 space-y-4 sm:mt-0'>
 									{navigation.items.map((item) => (
 										<li key={item.name}>
 											<a
 												href={item.href}
-												className='text-sm font-semibold leading-6 text-primary-600 hover:text-primary-900'>
+												className='text-sm font-semibold leading-6 text-secondary-600 hover:text-secondary-900'>
 												{item.name}
 											</a>
 										</li>
@@ -81,10 +84,10 @@ export default function Footer() {
 						</div>
 					</div>
 					<div className='mt-10 xl:mt-0'>
-						<h3 className='text-sm font-semibold leading-6 text-primary-900'>
+						<h3 className='text-sm font-semibold leading-6 text-secondary-900'>
 							Subscribe to our newsletter
 						</h3>
-						<p className='mt-2 text-sm leading-6 text-primary-600'>
+						<p className='mt-2 text-sm leading-6 text-secondary-600'>
 							The latest news, articles, and resources, sent to your inbox weekly.
 						</p>
 						<form className='mt-6 sm:flex sm:max-w-md'>
@@ -97,32 +100,32 @@ export default function Footer() {
 								id='email-address'
 								autoComplete='email'
 								required
-								className='w-full min-w-0 appearance-none rounded-md border-0 bg-white px-3 py-1.5 text-base text-primary-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:w-64 sm:text-sm sm:leading-6 xl:w-full'
+								className='w-full min-w-0 appearance-none rounded-md border-0 bg-secondary-50 px-3 py-1.5 text-base text-secondary-900 shadow-sm ring-1 ring-inset ring-secondary-300 placeholder:text-secondary-400 focus:ring-2 focus:ring-inset focus:ring-secondary-600 sm:w-64 sm:text-sm sm:leading-6 xl:w-full'
 								placeholder='Enter your email'
 							/>
 							<div className='mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0'>
 								<button
 									type='submit'
-									className='flex w-full items-center justify-center rounded-md bg-primary-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600'>
+									className='flex w-full items-center justify-center rounded-md bg-secondary-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-secondary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-600'>
 									Subscribe
 								</button>
 							</div>
 						</form>
 					</div>
 				</div>
-				<div className='mt-16 border-t border-primary-900/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24'>
+				<div className='mt-16 border-t border-secondary-900/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24'>
 					<div className='flex space-x-6 md:order-2'>
 						{navigation.social.map((item) => (
 							<a
 								key={item.name}
 								href={item.href}
-								className='text-primary-400 hover:text-primary-500'>
+								className='text-secondary-400 hover:text-secondary-500'>
 								<span className='sr-only'>{item.name}</span>
 								<item.icon className='h-6 w-6' aria-hidden='true' />
 							</a>
 						))}
 					</div>
-					<p className='mt-8 text-xs leading-5 text-primary-500 md:order-1 md:mt-0'>
+					<p className='mt-8 text-xs leading-5 text-secondary-500 md:order-1 md:mt-0'>
 						&copy; 2023 Green Wave. All rights reserved.
 					</p>
 				</div>

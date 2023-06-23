@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom';
 
+import Companies from '../../../assets/solutions/companies.avif';
+import Individuals from '../../../assets/solutions/individuals.avif';
+
 export default function Articles() {
 	return (
 		<div className='bg-primary-50'>
@@ -10,9 +13,9 @@ export default function Articles() {
 						<div className='flex flex-col items-center'>
 							<div className='aspect-h-2 aspect-w-3 w-full overflow-hidden rounded-lg'>
 								<img
-									src='https://images.unsplash.com/photo-1616449973117-0e1d99c56ed3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80'
+									src={Individuals}
 									alt='Drawstring top with elastic loop closure and textured interior padding.'
-									className='h-full w-full object-cover object-center'
+									className='max-h-96 w-full object-cover object-center'
 								/>
 							</div>
 							<h2
@@ -35,9 +38,9 @@ export default function Articles() {
 						<div className='flex flex-col items-center'>
 							<div className='aspect-h-2 aspect-w-3 w-full overflow-hidden rounded-lg'>
 								<img
-									src='https://images.unsplash.com/photo-1606185540834-d6e7483ee1a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+									src={Companies}
 									alt='Front zipper pouch with included key ring.'
-									className='h-full w-full object-cover object-center'
+									className='max-h-96 w-full object-cover object-center'
 								/>
 							</div>
 							<h2

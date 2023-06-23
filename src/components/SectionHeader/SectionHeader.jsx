@@ -28,7 +28,7 @@ export default function SectionHeader({ children }) {
 					}}
 				/>
 			</div> */}
-			<div className='mx-auto max-w-2xl text-center'>{children}</div>
+			<div className='mx-auto w-full text-center'>{children}</div>
 		</div>
 	);
 }
