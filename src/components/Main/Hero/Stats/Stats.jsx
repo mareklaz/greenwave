@@ -39,11 +39,11 @@ export default function Stats() {
 	const stats = [
 		{
 			id: 1,
-			name: 'OF PLASICS TAKEN OUT OF THE OCEAN',
+			name: 'TONS OF PLASICS TAKEN OUT OF THE OCEAN',
 			value: `${formattedNumber} kg`,
 			icon: Icon1,
 		},
-		{ id: 2, name: 'OF PLASICS RETRIVED AT PORT', value: 38.494, icon: Icon2 },
+		{ id: 2, name: 'TONS OF PLASICS RETRIVED AT PORT', value: 38.494, icon: Icon2 },
 		{ id: 3, name: 'COMPANIES CLEANING THE OCEANS', value: 34, icon: Icon3 },
 	];
 

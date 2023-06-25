@@ -1,24 +1,14 @@
-import { Fragment } from 'react';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon, ArrowDownTrayIcon } from '@heroicons/react/24/outline';
 import { Link, NavLink } from 'react-router-dom';
 import LOGO from '../assets/logo.svg';
-const user = {
-	name: 'Tom Cook',
-	email: 'tom@example.com',
-	imageUrl:
-		'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-};
+
 const navigation = [
 	{ name: 'Product', to: '/', current: true },
 	{ name: 'Solutions', to: '/solutions', current: false },
 	{ name: 'Resources', to: '/resources', current: false },
-	{ name: 'Members', to: '/members', current: false },
-];
-const userNavigation = [
-	{ name: 'Your Profile', to: '#' },
-	{ name: 'Settings', to: '#' },
-	{ name: 'Sign out', to: '#' },
+	{ name: 'Impact', to: '/impact', current: false },
+	{ name: 'How it Works', to: '/how-it-works', current: false },
 ];
 
 function classNames(...classes) {
@@ -27,7 +17,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
 	return (
-		<Disclosure as='nav' className='navbar-fixed bg-secondary-950 shadow-sm'>
+		<Disclosure as='nav' className=' bg-secondary-800'>
 			{({ open }) => (
 				<>
 					<div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
@@ -67,8 +57,7 @@ export default function Navbar() {
 												isActive
 													? 'rounded-md bg-secondary-400 px-3 py-2 text-sm font-medium text-white'
 													: 'rounded-md px-3 py-2 text-sm font-medium text-secondary-300 hover:bg-secondary-700 hover:text-white'
-											}
-											aria-current={item.current ? 'page' : undefined}>
+											}>
 											{item.name}
 										</NavLink>
 									))}
@@ -79,8 +68,7 @@ export default function Navbar() {
 									<button
 										type='button'
 										className='relative hidden items-center gap-x-1.5 rounded-md bg-primary-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 sm:inline-flex'>
-										<ArrowDownTrayIcon className='-ml-0.5 h-5 w-5' aria-hidden='true' />
-										Start & Download
+										Request a Demo
 									</button>
 								</div>
 							</div>
@@ -110,8 +98,7 @@ export default function Navbar() {
 									<Link
 										to='#'
 										className='relative inline-flex items-center gap-x-1.5 rounded-md bg-primary-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500'>
-										<ArrowDownTrayIcon className='-ml-0.5 h-5 w-5' aria-hidden='true' />
-										Start & Download
+										Request a Demo
 									</Link>
 								</Disclosure.Button>
 							</div>

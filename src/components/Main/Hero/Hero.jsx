@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import Stats from './Stats/Stats';
 import { ChevronRightIcon } from '@heroicons/react/20/solid';
+import { Link } from 'react-router-dom';
+
+import MobileBackgroundImage from '../../../assets/imagen-mobile.png';
 
 export default function Hero() {
 	return (
@@ -22,16 +25,6 @@ export default function Hero() {
 						}}
 					/>
 				</div>
-				{/* <div className='mx-auto py-32 sm:py-32 lg:py-48'>
-					<div className='text-center'>
-						<h1 className='text-4xl font-bold tracking-tight text-white sm:text-6xl'>
-							Ride the Green Wave, shop smarter:
-						</h1>
-						<h2 className='mt-6 text-2xl font-semibold italic tracking-tight text-white sm:text-4xl'>
-							Surfing towards ocean conservation
-						</h2>
-					</div>
-				</div> */}
 				<div className='sm:py-23 mx-auto max-w-7xl px-6 py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-24'>
 					<div className='mx-auto max-w-4xl lg:mx-0 lg:flex-auto'>
 						<h1 className='mt-10 max-w-lg text-4xl font-bold tracking-tight text-white sm:text-6xl'>
@@ -40,6 +33,13 @@ export default function Hero() {
 						<h2 className='mt-6 text-3xl leading-8 text-white'>
 							Surfing towards ocean conservation
 						</h2>
+						<div className='mt-10 flex items-center gap-x-6'>
+							<Link
+								href='/'
+								className='rounded-md bg-secondary-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-400'>
+								Request a Demo
+							</Link>
+						</div>
 
 						<Stats />
 					</div>
@@ -67,10 +67,7 @@ export default function Hero() {
 								height={684}
 								transform='translate(24 24)'
 								clipPath='url(#2ade4387-9c63-4fc4-b754-10e687a0d332)'>
-								<img
-									src='https://tailwindui.com/img/component-images/mobile-app-screenshot.png'
-									alt=''
-								/>
+								<img src={MobileBackgroundImage} alt='' />
 							</foreignObject>
 						</svg>
 					</div>

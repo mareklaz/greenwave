@@ -7,23 +7,25 @@ import Solutions from './pages/Solutions/Solutions';
 import Resources from './pages/Resources/Resources';
 import Members from './pages/Members/Members';
 import Individuals from './pages/Individuals/Individuals';
-import Companies from './pages/Companies/Companies';
+import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
+import Impact from './pages/Impact/Impact';
+import HowItWorks from './pages/HowItWorks/HowItWorks';
 
 function App() {
 	return (
 		<>
 			<Navbar />
-			<div className='mt-16'>
-				<Routes>
-					<Route path='/' element={<Main />} />
-					<Route path='/solutions' element={<Solutions />} />
-					<Route path='/resources' element={<Resources />} />
-					<Route path='/members' element={<Members />} />
-					<Route path='/individuals' element={<Individuals />} />
-					<Route path='/companies' element={<Companies />} />
-				</Routes>
-				<Footer />
-			</div>
+			<Routes>
+				<Route path='/' element={<Main />} />
+				<Route path='/solutions' element={<Solutions />} />
+				<Route path='/resources' element={<Resources />} />
+				<Route path='/members' element={<Members />} />
+				<Route path='/individuals' element={<Individuals />} />
+				<Route path='/how-it-works' element={<HowItWorks />} />
+				<Route path='/impact' element={<Impact />} />
+			</Routes>
+			<Footer />
+			<ScrollToTopButton />
 		</>
 	);
 }

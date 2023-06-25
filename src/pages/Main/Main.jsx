@@ -1,12 +1,16 @@
 import CallToActions from '../../components/Main/CTA/CallToActions';
+import CompaniesLogo from '../../components/Main/CompaniesLogo/CompaniesLogo';
 import Hero from '../../components/Main/Hero/Hero';
-import Articles from '../../components/Main/Sections/Articles';
+import OnuLogos from '../../components/Main/OnuLogos/OnuLogos';
+import Video from '../../components/Main/Video/Video';
 
 export default function Main() {
 	return (
 		<>
 			<Hero />
-			<Articles />
+			<CompaniesLogo />
+			<Video />
+			<OnuLogos />
 			<CallToActions />
 		</>
 	);
