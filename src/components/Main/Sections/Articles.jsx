@@ -30,7 +30,7 @@ export default function Articles() {
 								plastic waste redusction and contribute to saving our oceans.
 							</p>
 							<Link
-								to='/'
+								to='/individuals'
 								className='mt-6 w-40 rounded-full bg-primary-600 px-4 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600'>
 								Learn More
 							</Link>
@@ -55,7 +55,7 @@ export default function Articles() {
 								awarness of sustainability.
 							</p>
 							<Link
-								to='/'
+								to='/companies'
 								className='mt-6 w-40 rounded-full bg-primary-600 px-4 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600'>
 								Learn More
 							</Link>

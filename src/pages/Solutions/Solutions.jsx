@@ -3,13 +3,14 @@ import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import CleaningGrid from '../../components/Solutions/CleaningGrid/CleaningGrid';
 import OffsetingProjects from '../../components/Solutions/OffsetingProjects/OffsetingProjects';
 import StoryProjects from '../../components/Solutions/StoryProjects/StoryProjects';
+import HeaderImage from '../../assets/solutions/header.avif';
 
 export default function Solutions() {
 	return (
-		<>
-			<SectionHeader>
+		<div>
+			<SectionHeader image={HeaderImage}>
 				<h2 className='text-4xl font-bold tracking-tight text-white sm:text-6xl'>Solutions</h2>
-				<p className='my-6 text-lg leading-8 text-gray-300'>
+				<p className='my-6 text-lg leading-8 text-white '>
 					Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
 					Elit sunt amet fugiat veniam occaecat fugiat aliqua.
 				</p>
@@ -22,6 +23,6 @@ export default function Solutions() {
 			<CleaningGrid />
 			<StoryProjects />
 			<OffsetingProjects />
-		</>
+		</div>
 	);
 }
