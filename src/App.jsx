@@ -13,10 +13,12 @@ import HowItWorks from './pages/HowItWorks/HowItWorks';
 import Contact from './pages/Contact/Contact';
 import ImpactCases from './pages/Blog/ImpactCases';
 import OceanCleanUp from './pages/Blog/OceanCleanUp';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
 	return (
 		<div>
+			<ScrollToTop />
 			<Navbar />
 			<Routes>
 				<Route path='/' element={<Main />} />
