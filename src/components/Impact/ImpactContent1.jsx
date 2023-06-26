@@ -91,7 +91,7 @@ export default function ImpactContent1() {
 									the most important and largest non-profit organizations in the world.
 								</p>
 								<Link
-									to=''
+									to='/impact/cases'
 									className='text-xl font-semibold text-secondary-400 hover:text-secondary-200'>
 									Learn more <span aria-hidden='true'>→</span>
 								</Link>

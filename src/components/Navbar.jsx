@@ -5,10 +5,10 @@ import LOGO from '../assets/logo.svg';
 
 const navigation = [
 	{ name: 'Product', to: '/', current: true },
-	{ name: 'Solutions', to: '/solutions', current: false },
-	{ name: 'Resources', to: '/resources', current: false },
-	{ name: 'Impact', to: '/impact', current: false },
-	{ name: 'How it Works', to: '/how-it-works', current: false },
+	{ name: 'Solutions', to: 'solutions', current: false },
+	{ name: 'Resources', to: 'resources', current: false },
+	{ name: 'Impact', to: 'impact', current: false },
+	{ name: 'How it Works', to: 'how-it-works', current: false },
 ];
 
 function classNames(...classes) {
@@ -65,11 +65,12 @@ export default function Navbar() {
 							</div>
 							<div className='flex items-center'>
 								<div className='flex-shrink-0'>
-									<button
+									<Link
+										to='/contact'
 										type='button'
 										className='relative hidden items-center gap-x-1.5 rounded-md bg-primary-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 sm:inline-flex'>
 										Request a Demo
-									</button>
+									</Link>
 								</div>
 							</div>
 						</div>
@@ -96,8 +97,9 @@ export default function Navbar() {
 							<div className='flex items-center px-5 sm:px-6'>
 								<Disclosure.Button>
 									<Link
-										to='#'
-										className='relative inline-flex items-center gap-x-1.5 rounded-md bg-primary-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500'>
+										to='/contact'
+										type='button'
+										className='relative hidden items-center gap-x-1.5 rounded-md bg-primary-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 sm:inline-flex'>
 										Request a Demo
 									</Link>
 								</Disclosure.Button>

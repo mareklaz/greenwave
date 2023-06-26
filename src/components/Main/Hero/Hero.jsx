@@ -35,8 +35,9 @@ export default function Hero() {
 						</h2>
 						<div className='mt-10 flex items-center gap-x-6'>
 							<Link
-								href='/'
-								className='rounded-md bg-secondary-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-400'>
+								to='/contact'
+								type='button'
+								className='relative hidden items-center gap-x-1.5 rounded-md bg-primary-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 sm:inline-flex'>
 								Request a Demo
 							</Link>
 						</div>

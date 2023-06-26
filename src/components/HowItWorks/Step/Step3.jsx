@@ -39,7 +39,7 @@ export default function Step3() {
 								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
 								perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
 							</p>
-							<Link to='' className='text-lg font-semibold text-primary-600'>
+							<Link to='/articles' className='text-lg font-semibold text-primary-600'>
 								Learn more <span aria-hidden='true'>→</span>
 							</Link>
 						</div>
