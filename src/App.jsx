@@ -1,8 +1,8 @@
-import Footer from './components/Footer/Footer';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer/Footer';
 import Main from './pages/Main/Main';
-
-import { Route, Routes, ScrollRestoration } from 'react-router-dom';
 import Solutions from './pages/Solutions/Solutions';
 import Resources from './pages/Resources/Resources';
 import Members from './pages/Members/Members';
@@ -14,12 +14,22 @@ import Contact from './pages/Contact/Contact';
 import ImpactCases from './pages/Blog/ImpactCases';
 import OceanCleanUp from './pages/Blog/OceanCleanUp';
 import ScrollToTop from './components/ScrollToTop';
+import Dashboard from './pages/Dashboard/Dashboard';
+import DashboardContent from './pages/Dashboard/DashboardContent';
 
 function App() {
+	const location = useLocation();
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [location.pathname]);
+
+	const isDashboard = location.pathname === '/dashboard';
+
 	return (
 		<div>
 			<ScrollToTop />
-			<Navbar />
+			{!isDashboard && <Navbar />}
 			<Routes>
 				<Route path='/' element={<Main />} />
 				<Route path='/solutions' element={<Solutions />} />
@@ -31,9 +41,19 @@ function App() {
 				<Route path='/impact/cases' element={<ImpactCases />} />
 				<Route path='/impact/cases/the-ocean-cleanup' element={<OceanCleanUp />} />
 				<Route path='/contact' element={<Contact />} />
+				{isDashboard && (
+					<Route
+						path='/dashboard'
+						element={
+							<Dashboard>
+								<DashboardContent />
+							</Dashboard>
+						}
+					/>
+				)}
 			</Routes>
-			<Footer />
-			<ScrollToTopButton />
+			{!isDashboard && <Footer />}
+			{!isDashboard && <ScrollToTopButton />}
 		</div>
 	);
 }
