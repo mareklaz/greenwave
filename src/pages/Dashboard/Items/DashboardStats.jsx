@@ -37,7 +37,7 @@ function classNames(...classes) {
 export default function DashboardStats() {
 	return (
 		<div>
-			<h3 className=' text-base font-semibold leading-6 text-primary-900'>Last 30 days</h3>
+			<h3 className=' text-base font-semibold leading-6 text-primary-900'>Stats</h3>
 			<dl className='mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3 '>
 				{stats.map((item) => (
 					<div
