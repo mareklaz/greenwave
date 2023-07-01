@@ -35,8 +35,8 @@ export default function Step1() {
 								Calculate your impact
 							</p>
 							<p className='mt-6 text-lg leading-8 text-primary-600'>
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
-								perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+								Our carbon footprint calculator will help you understand the environmental impact of
+								your purchases like never before.
 							</p>
 							<img src={img1b} className='my-4 w-full' alt='' srcset='' />
 						</div>

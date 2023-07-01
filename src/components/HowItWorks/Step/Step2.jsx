@@ -36,12 +36,9 @@ export default function Step2() {
 								Naturalize your impact
 							</p>
 							<p className='my-6 text-lg leading-8 text-primary-600'>
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
-								perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+								By activating the Green Wave option during checkout, you actively contribute to
+								offsetting the emissions tied to your transaction.
 							</p>
-							<Link to='' className='text-lg font-semibold text-primary-600'>
-								Learn more <span aria-hidden='true'>→</span>
-							</Link>
 							<img src={img2b} className='my-6 w-full' alt='' srcset='' />
 						</div>
 					</div>

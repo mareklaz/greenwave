@@ -4,6 +4,7 @@ import ImpactBackground from '../../assets/impact.avif';
 import ImpactContent1 from '../../components/Impact/ImpactContent1';
 import OffsetingProjects from '../../components/Solutions/OffsetingProjects/OffsetingProjects';
 import OnuLogos from '../../components/Main/OnuLogos/OnuLogos';
+import ResourcesCta from '../Resources/ResourcesCta.jsx/ResourcesCta';
 
 export default function Impact() {
 	return (
@@ -20,6 +21,7 @@ export default function Impact() {
 			<OffsetingProjects />
 			<OnuLogos />
 			<ImpactContent1 />
+			<ResourcesCta />
 		</>
 	);
 }

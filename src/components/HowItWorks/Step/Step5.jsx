@@ -36,12 +36,13 @@ export default function Step5() {
 								Drive customers Loyality
 							</p>
 							<p className='my-6 text-lg leading-8 text-primary-600'>
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
-								perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+								Our content sparks conversations, educates, and encourages sustainable behaviors.
+								This valuable information positions your brand as a thought leader in environmental
+								stewardship, fostering customer loyalty and advocacy.
 							</p>
-							<Link to='' className='text-lg font-semibold text-primary-600'>
+							{/* <Link to='' className='text-lg font-semibold text-primary-600'>
 								Learn more <span aria-hidden='true'>→</span>
-							</Link>
+							</Link> */}
 							<img src={img5b} className='my-6 w-full' alt='' srcset='' />
 						</div>
 					</div>

@@ -35,10 +35,11 @@ export default function Step4() {
 								Monitor Progress
 							</p>
 							<p className='my-6 text-lg leading-8 text-primary-600'>
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
-								perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+								Through our analytics dashboard, you can effortlessly monitor your progress in
+								reducing environmental impact. These valuable insights enable you to make
+								data-driven decisions, optimize your sustainability strategies.
 							</p>
-							<Link to='' className='text-lg font-semibold text-primary-600'>
+							<Link to='/dashboard' className='text-lg font-semibold text-primary-600'>
 								Learn more <span aria-hidden='true'>→</span>
 							</Link>
 						</div>

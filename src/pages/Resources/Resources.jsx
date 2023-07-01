@@ -7,12 +7,13 @@ export default function Resources() {
 	return (
 		<>
 			<SectionHeader>
-				<h2 className='text-4xl font-bold tracking-tight text-white sm:text-6xl'>Resources</h2>
+				<h2 className='text-4xl font-bold tracking-tight text-white sm:text-6xl'>
+					Green Wave Sustainability Hub
+				</h2>
 				<p className='my-6 text-lg leading-8 text-gray-300'>
-					Through our global network of reputable suppliers, we actively contribute to environmental
-					conservation and sustainability. Join us on the Green Wave journey and become part of our
-					mission to create a more sustainable future for our planet. Together, let's make a lasting
-					positive impact.
+					Discover the Green Wave Sustainability Hub, your one-stop resource for sustainability
+					guides, news, examples, and reports, empowering you to make a positive impact and embrace
+					a greener future.
 				</p>
 				<Link
 					to='/contact'

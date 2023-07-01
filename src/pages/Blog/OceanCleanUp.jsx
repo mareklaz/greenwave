@@ -4,6 +4,7 @@ import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import Benefits from '../../components/Impact/Benefits/Benefits';
 import OnuLogos from '../../components/Main/OnuLogos/OnuLogos';
 import Map from '../../components/Impact/Map';
+import ResourcesCta from '../Resources/ResourcesCta.jsx/ResourcesCta';
 
 export default function OceanCleanUp() {
 	return (
@@ -18,6 +19,7 @@ export default function OceanCleanUp() {
 			<Benefits />
 			<Map></Map>
 			<OnuLogos />
+			<ResourcesCta />
 		</div>
 	);
 }

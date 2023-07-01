@@ -36,10 +36,14 @@ export default function Step3() {
 								Capture & Inspire Customers
 							</p>
 							<p className='my-6 text-lg leading-8 text-primary-600'>
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
-								perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+								Transform your sustainability initiatives into compelling stories that resonate with
+								your customers. Let us help you attract, engage, and inspire your audience to join
+								the movement towards a greener, more sustainable future.
 							</p>
-							<Link to='/articles' className='text-lg font-semibold text-primary-600'>
+							<Link
+								to='https://671b4a.myshopify.com/'
+								target='_blank'
+								className='text-lg font-semibold text-primary-600'>
 								Learn more <span aria-hidden='true'>→</span>
 							</Link>
 						</div>
