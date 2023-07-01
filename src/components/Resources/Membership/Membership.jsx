@@ -1,48 +1,10 @@
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
-
+import MembershipImage from '../../../assets/membership.png';
 export default function Membership() {
 	return (
 		<div className='relative isolate bg-primary-50 pt-14'>
-			{/* <svg
-				className='absolute inset-0 -z-10 h-full w-full stroke-primary-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]'
-				aria-hidden='true'>
-				<defs>
-					<pattern
-						id='83fd4e5a-9d52-42fc-97b6-718e5d7ee527'
-						width={200}
-						height={200}
-						x='50%'
-						y={-1}
-						patternUnits='userSpaceOnUse'>
-						<path d='M100 200V.5M.5 .5H200' fill='none' />
-					</pattern>
-				</defs>
-				<svg x='50%' y={-1} className='overflow-visible fill-primary-50'>
-					<path
-						d='M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z'
-						strokeWidth={0}
-					/>
-				</svg>
-				<rect
-					width='100%'
-					height='100%'
-					strokeWidth={0}
-					fill='url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)'
-				/>
-			</svg> */}
-			<div className='mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40'>
+			<div className='mx-auto max-w-7xl px-6 py-16 sm:py-16 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-24'>
 				<div className='mx-auto max-w-2xl lg:mx-0 lg:flex-auto'>
-					<div className='flex'>
-						{/* <div className='relative flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 text-primary-600 ring-1 ring-primary-900/10 hover:ring-primary-900/20'>
-							<span className='font-semibold text-secondary-600'>We’re hiring</span>
-							<span className='h-4 w-px bg-primary-900/10' aria-hidden='true' />
-							<a href='#' className='flex items-center gap-x-1'>
-								<span className='absolute inset-0' aria-hidden='true' />
-								See open positions
-								<ChevronRightIcon className='-mr-2 h-5 w-5 text-primary-400' aria-hidden='true' />
-							</a>
-						</div> */}
-					</div>
 					<h1 className='mt-10 max-w-lg text-4xl font-bold tracking-tight text-primary-900 sm:text-6xl'>
 						Membership Program
 					</h1>
@@ -106,10 +68,7 @@ export default function Membership() {
 							height={684}
 							transform='translate(24 24)'
 							clipPath='url(#2ade4387-9c63-4fc4-b754-10e687a0d332)'>
-							<img
-								src='https://tailwindui.com/img/component-images/mobile-app-screenshot.png'
-								alt=''
-							/>
+							<img src={MembershipImage} alt='' />
 						</foreignObject>
 					</svg>
 				</div>

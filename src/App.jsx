@@ -16,6 +16,8 @@ import OceanCleanUp from './pages/Blog/OceanCleanUp';
 import ScrollToTop from './components/ScrollToTop';
 import Dashboard from './pages/Dashboard/Dashboard';
 import DashboardContent from './pages/Dashboard/DashboardContent';
+import DashboardButton from './pages/Dashboard/DasboardButton/DasboardButton';
+import Api from './pages/Api/Api';
 
 function App() {
 	const location = useLocation();
@@ -27,7 +29,7 @@ function App() {
 	const isDashboard = location.pathname === '/dashboard';
 
 	return (
-		<div>
+		<>
 			<ScrollToTop />
 			{!isDashboard && <Navbar />}
 			<Routes>
@@ -41,6 +43,8 @@ function App() {
 				<Route path='/impact/cases' element={<ImpactCases />} />
 				<Route path='/impact/cases/the-ocean-cleanup' element={<OceanCleanUp />} />
 				<Route path='/contact' element={<Contact />} />
+				<Route path='/api' element={<Api />} />
+				<Route path='/dashboard/button' element={<DashboardButton />} />
 				{isDashboard && (
 					<Route
 						path='/dashboard'
@@ -54,7 +58,7 @@ function App() {
 			</Routes>
 			{!isDashboard && <Footer />}
 			{!isDashboard && <ScrollToTopButton />}
-		</div>
+		</>
 	);
 }
 

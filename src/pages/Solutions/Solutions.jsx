@@ -4,15 +4,20 @@ import CleaningGrid from '../../components/Solutions/CleaningGrid/CleaningGrid';
 import OffsetingProjects from '../../components/Solutions/OffsetingProjects/OffsetingProjects';
 import StoryProjects from '../../components/Solutions/StoryProjects/StoryProjects';
 import HeaderImage from '../../assets/solutions/header.avif';
+import SolutionCta from '../../components/Solutions/SolutionCta.jsx/SolutionCta';
 
 export default function Solutions() {
 	return (
 		<div>
 			<SectionHeader image={HeaderImage}>
-				<h2 className='text-4xl font-bold tracking-tight text-white sm:text-6xl'>Solutions</h2>
+				<h2 className='text-4xl font-bold tracking-tight text-white sm:text-6xl'>
+					Initiatives for Every Brand Journey
+				</h2>
 				<p className='my-6 text-lg leading-8 text-white '>
-					Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
-					Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+					Through our global network of reputable suppliers, we actively contribute to environmental
+					conservation and sustainability. Join us on the Green Wave journey and become part of our
+					mission to create a more sustainable future for our planet. Together, let's make a lasting
+					positive impact.
 				</p>
 				<Link
 					to='/contact'
@@ -24,6 +29,7 @@ export default function Solutions() {
 			<CleaningGrid />
 			<StoryProjects />
 			<OffsetingProjects />
+			<SolutionCta />
 		</div>
 	);
 }

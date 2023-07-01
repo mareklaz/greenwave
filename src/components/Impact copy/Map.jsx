@@ -1,9 +1,9 @@
-import StoryBackground from '../../../assets/solutions/solutions-background.png';
+import MapBackground from '../../assets/map-background.png';
 
-export default function StoryProjects() {
+export default function Map() {
 	return (
-		<div className='relative isolate overflow-hidden bg-gray-900 px-6 py-36 sm:py-52 lg:px-8'>
-			<img src={StoryBackground} className='absolute inset-0 -z-10 h-full w-full object-cover' />
+		<div className='relative isolate overflow-hidden bg-gray-900 px-6 py-36 sm:py-64 lg:px-8'>
+			<img src={MapBackground} className='absolute inset-0 -z-10 h-full w-full object-cover' />
 			<div
 				className='hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl'
 				aria-hidden='true'>
@@ -26,7 +26,7 @@ export default function StoryProjects() {
 					}}
 				/>
 			</div>
-			<div className='mx-auto max-w-6xl text-center'>
+			{/* <div className='mx-auto max-w-6xl text-center'>
 				<h2 className='text-4xl font-bold tracking-tight text-white sm:text-6xl'>
 					Unleash your brand's impactful story with global offset projects
 				</h2>
@@ -37,7 +37,7 @@ export default function StoryProjects() {
 					aut provident aliquid hic voluptates fugit vitae debitis explicabo est natus, facilis iste
 					ad optio reprehenderit molestiae quas id. Eaque, laudantium fugit!
 				</p>
-			</div>
+			</div> */}
 		</div>
 	);
 }

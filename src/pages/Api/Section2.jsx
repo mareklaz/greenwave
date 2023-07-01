@@ -1,30 +1,6 @@
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid';
-import img2a from '../../../assets/how-it-works/img-2a.png';
-import img2b from '../../../assets/how-it-works/img-2b.png';
-import { Link } from 'react-router-dom';
 
-const features = [
-	{
-		name: 'Push to deploy.',
-		description:
-			'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-		icon: CloudArrowUpIcon,
-	},
-	{
-		name: 'SSL certificates.',
-		description:
-			'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-		icon: LockClosedIcon,
-	},
-	{
-		name: 'Database backups.',
-		description:
-			'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-		icon: ServerIcon,
-	},
-];
-
-export default function Step2() {
+export default function Section2() {
 	return (
 		<div className='overflow-hidden bg-white py-16 sm:py-16'>
 			<div className='mx-auto max-w-7xl px-6 lg:px-8'>
@@ -33,26 +9,17 @@ export default function Step2() {
 						<div className='lg:max-w-lg'>
 							{/* <h2 className='text-base font-semibold leading-7 text-indigo-600'>Deploy faster</h2> */}
 							<p className='mt-2 text-3xl font-bold tracking-tight text-primary-900 sm:text-4xl'>
-								Naturalize your impact
+								Fund Diverse Offsetting Projects
 							</p>
 							<p className='my-6 text-lg leading-8 text-primary-600'>
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
-								perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+								Select a diverse offsetting project portfolio from a roster of portfolios that
+								include activities such as forest protection, coastal and marine ecosystem
+								preservation, improved health and livelihood for underserved communities, and
+								creating sustainable infrastructure.
 							</p>
-							<Link to='' className='text-lg font-semibold text-primary-600'>
-								Learn more <span aria-hidden='true'>→</span>
-							</Link>
-							<img src={img2b} className='my-6 w-full' alt='' srcset='' />
 						</div>
 					</div>
 					<div className='flex items-start justify-end lg:order-first'>
-						{/* <img
-							src='https://tailwindui.com/img/component-images/dark-project-app-screenshot.png'
-							alt='Product screenshot'
-							className='w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-primary-400/10 sm:w-[57rem]'
-							width={2432}
-							height={1442}
-						/> */}
 						<svg
 							viewBox='0 0 366 729'
 							role='img'
@@ -76,7 +43,7 @@ export default function Step2() {
 								height={684}
 								transform='translate(24 24)'
 								clipPath='url(#2ade4387-9c63-4fc4-b754-10e687a0d332)'>
-								<img src={img2a} alt='' />
+								<img src={''} alt='' />
 							</foreignObject>
 						</svg>
 					</div>

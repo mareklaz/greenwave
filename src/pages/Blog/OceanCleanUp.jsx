@@ -3,6 +3,7 @@ import ImpactContent3 from '../../components/Impact/ImpactContent3';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import Benefits from '../../components/Impact/Benefits/Benefits';
 import OnuLogos from '../../components/Main/OnuLogos/OnuLogos';
+import Map from '../../components/Impact/Map';
 
 export default function OceanCleanUp() {
 	return (
@@ -15,6 +16,7 @@ export default function OceanCleanUp() {
 			</SectionHeader>
 			<ImpactContent3 />
 			<Benefits />
+			<Map></Map>
 			<OnuLogos />
 		</div>
 	);

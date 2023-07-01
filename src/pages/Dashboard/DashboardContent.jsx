@@ -3,6 +3,7 @@ import DashboardStats from './Items/DashboardStats';
 import ChartJs from './ChartJs/ChartJs';
 import ChartJs1 from './ChartJs/ChartJs1';
 import ChartJs2 from './ChartJs/ChartJs2';
+import ChartJs4 from './ChartJs/ChartJs4';
 
 export default function DashboardContent() {
 	return (
@@ -15,6 +16,7 @@ export default function DashboardContent() {
 					<ChartJs1 />
 					<ChartJs2 />
 				</dl>
+				<ChartJs4 />
 			</div>
 		</div>
 	);

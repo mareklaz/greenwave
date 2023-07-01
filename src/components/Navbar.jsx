@@ -8,6 +8,8 @@ const navigation = [
 	{ name: 'Solutions', to: 'solutions', current: false },
 	{ name: 'Resources', to: 'resources', current: false },
 	{ name: 'Impact', to: 'impact', current: false },
+	{ name: 'Members', to: 'members', current: false },
+	{ name: 'Api & Dev', to: 'api', current: false },
 	{ name: 'How it Works', to: 'how-it-works', current: false },
 ];
 

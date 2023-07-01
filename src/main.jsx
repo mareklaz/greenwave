@@ -5,9 +5,12 @@ import './styles/tailwind.css';
 import './styles/main.css';
 
 import { BrowserRouter as Router } from 'react-router-dom';
+import { DashboardContextProvider } from './context/DashboardContext.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-	<Router>
-		<App />
-	</Router>
+	<DashboardContextProvider>
+		<Router>
+			<App />
+		</Router>
+	</DashboardContextProvider>
 );

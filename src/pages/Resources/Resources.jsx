@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import Cases from '../../components/Resources/Cases/Cases';
+import ResourcesCta from './ResourcesCta.jsx/ResourcesCta';
 
 export default function Resources() {
 	return (
@@ -21,6 +22,7 @@ export default function Resources() {
 				</Link>
 			</SectionHeader>
 			<Cases />
+			<ResourcesCta />
 		</>
 	);
 }
