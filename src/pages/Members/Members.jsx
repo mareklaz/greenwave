@@ -3,7 +3,8 @@ import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import Membership from '../../components/Resources/Membership/Membership';
 import Brands from '../../components/Resources/Brands/Brands';
 import CompaniesLogo from '../../components/Main/CompaniesLogo/CompaniesLogo';
-import MembersCta from './MembersCta';
+import Individuals from '../Individuals/Individuals';
+import MembersCTA from './Components/MembersCTA';
 
 export default function Members() {
 	return (
@@ -19,8 +20,9 @@ export default function Members() {
 				</Link>
 			</SectionHeader>
 			<Membership />
+			<Individuals />
 			<CompaniesLogo />
-			<MembersCta />
+			<MembersCTA />
 		</>
 	);
 }

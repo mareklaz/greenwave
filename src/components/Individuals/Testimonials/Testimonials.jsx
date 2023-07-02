@@ -1,11 +1,11 @@
 const testimonials = [
 	{
-		body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+		body: `Green Wave has completely transformed the way I contribute to ocean conservation. It's user-friendly, intuitive, and helps me track my sustainable efforts effectively. Highly recommended!`,
 		author: {
-			name: 'Sarah Mayer',
-			handle: 'Switzerland',
+			name: 'John Weaver',
+			handle: 'United Kingdom',
 			imageUrl:
-				'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+				'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 		},
 	},
 	{
@@ -18,12 +18,12 @@ const testimonials = [
 		},
 	},
 	{
-		body: `I love how the Green Wave app gamifies sustainability. It motivates me to make eco-conscious choices and earn badges along the way. It's like a friendly competition that keeps me engaged.`,
+		body: `As an avid ocean lover, I appreciate how Green Wave connects me with a community of like-minded individuals. I can share my progress, learn from others, and feel a sense of belonging.`,
 		author: {
-			name: 'Sarah Mayer',
-			handle: 'Switzerland',
+			name: 'Martin Bernard',
+			handle: 'France',
 			imageUrl:
-				'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+				'https://images.unsplash.com/photo-1489980557514-251d61e3eeb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 		},
 	},
 ];

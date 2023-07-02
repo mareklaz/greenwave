@@ -9,12 +9,11 @@ export default function Section1() {
 						<div className='lg:max-w-lg'>
 							{/* <h2 className='text-base font-semibold leading-7 text-indigo-600'>Deploy faster</h2> */}
 							<p className='mt-2 text-3xl font-bold tracking-tight text-primary-900 sm:text-4xl'>
-								Understand Your Emissions
+								Explore your Carbon Footprint
 							</p>
 							<p className='mt-6 text-lg leading-8 text-primary-600'>
-								Calculate the carbon emissions associated with the manufacturing and shipping
-								processes of your products automatically based on the leading global standards for
-								calculating greenhouse gas emissions.
+								Gain insights into your emissions of each product purchased in your e-commerce order
+								and their impact on the environment through our user-friendly tools and resources
 							</p>
 						</div>
 					</div>

@@ -9,12 +9,11 @@ export default function Section3() {
 						<div className='lg:max-w-lg'>
 							{/* <h2 className='text-base font-semibold leading-7 text-indigo-600'>Deploy faster</h2> */}
 							<p className='mt-2 text-3xl font-bold tracking-tight text-primary-900 sm:text-4xl'>
-								Create Seamless Customer Experiences
+								Enhance Customer Journeys:
 							</p>
 							<p className='mt-6 text-lg leading-8 text-primary-600'>
-								Integrate compelling and transparent touch points, such as a checkout out widget or
-								impact counter, into your customer experience that communicate your sustainability
-								initiatives with little to no code writing needed and encourage shoppers to join in.
+								Deliver seamless and engaging experiences to your customers, integrating
+								sustainability into every touchpoint of their interactions with your brand.
 							</p>
 						</div>
 					</div>

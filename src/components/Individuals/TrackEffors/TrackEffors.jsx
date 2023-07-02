@@ -1,5 +1,6 @@
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
-
+import backgroundPhone from '../../../assets/individuals/background-phone.png';
+import { Link } from 'react-router-dom';
 export default function TrackEffors() {
 	return (
 		<div className='relative isolate bg-primary-50 pt-14'>
@@ -21,6 +22,12 @@ export default function TrackEffors() {
 					<p className='my-2 text-lg leading-8 text-primary-600'>
 						Together, let's create a healthier and more sustainable future for our seas.
 					</p>
+					<Link
+						target='_blank'
+						to='https://theoceancleanup.com/dashboard/#system002'
+						className='my-2 text-lg font-semibold leading-8 text-primary-600'>
+						Learn more about The Ocean Cleanup company <span aria-hidden='true'>&rarr;</span>
+					</Link>
 				</div>
 				<div className='mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow'>
 					<svg
@@ -46,10 +53,7 @@ export default function TrackEffors() {
 							height={684}
 							transform='translate(24 24)'
 							clipPath='url(#2ade4387-9c63-4fc4-b754-10e687a0d332)'>
-							<img
-								src='https://tailwindui.com/img/component-images/mobile-app-screenshot.png'
-								alt=''
-							/>
+							<img src={backgroundPhone} alt='' />
 						</foreignObject>
 					</svg>
 				</div>

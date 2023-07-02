@@ -31,7 +31,6 @@ export default function Dashboard({ children }) {
 								<img
 									src='https://cdn.shopify.com/s/files/1/0122/2724/8185/files/LOGO-X-Vertical_247x.png?v=1631721198'
 									alt=''
-									srcset=''
 									className='w-16'
 								/>
 							</div>

@@ -9,11 +9,14 @@ export default function Section2() {
 						<div className='lg:max-w-lg'>
 							{/* <h2 className='text-base font-semibold leading-7 text-indigo-600'>Deploy faster</h2> */}
 							<p className='mt-2 text-3xl font-bold tracking-tight text-primary-900 sm:text-4xl'>
-								Support sustainable initiatives:
+								Become a PRO of sustainability
+							</p>
+							<p className='mt-2 text-lg font-bold tracking-tight text-primary-900 sm:text-2xl'>
+								Easy integration with API
 							</p>
 							<p className='my-6 text-lg leading-8 text-primary-600'>
-								Fund a range of impactful offsetting projects that tackle climate change, protect
-								ecosystems, and promote social welfare.
+								By providing an API, Green Wave enables seamless communication and data exchange
+								between its platform and other B2B applications, such as e-commerce websites.
 							</p>
 						</div>
 					</div>
