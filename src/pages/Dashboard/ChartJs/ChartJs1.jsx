@@ -28,7 +28,7 @@ export default function ChartJs1() {
 	const chartData = [25, 35, 40];
 	return (
 		<div className='rounded-lg border border-primary-100 bg-primary-50 px-4 py-5 shadow sm:p-6'>
-			<h2>Age</h2>
+			<h2 className='text-2xl font-bold text-primary-900'>Age</h2>
 
 			<div className=''>
 				<DoughnutChart data={chartData} />

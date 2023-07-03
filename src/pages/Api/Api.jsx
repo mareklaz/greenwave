@@ -5,6 +5,7 @@ import Section2 from './Section2';
 import Section3 from './Section3';
 import Section4 from './Section4';
 import ApiCta from './ApiCta';
+import ApiSection from './ApiSection';
 
 export default function Api() {
 	return (
@@ -17,10 +18,13 @@ export default function Api() {
 					Measure, offset, and take action on carbon emissions with Green Wave's API.
 				</p>
 			</SectionHeader>
-			<Section1 />
-			<Section2 />
-			<Section3 />
-			<Section4 />
+			<div className='py-24'>
+				<Section1 />
+				<Section2 />
+				<Section3 />
+				{/* <Section4 /> */}
+			</div>
+			<ApiSection />
 			<ApiCta />
 		</div>
 	);

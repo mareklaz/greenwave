@@ -58,7 +58,7 @@ const ChartJs4 = () => {
 
 	return (
 		<div className='mt-6 rounded-lg border border-primary-100 bg-primary-50 px-4 py-5 shadow sm:p-6'>
-			<h2>Information</h2>
+			<h2 className='text-2xl font-bold text-primary-900'>Information</h2>
 
 			<div className='mt-6'>
 				<Bar data={chartData} options={chartOptions} />

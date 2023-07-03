@@ -28,7 +28,7 @@ export default function ChartJs() {
 	const chartData = [45, 55];
 	return (
 		<div className='rounded-lg border border-primary-100 bg-primary-50 px-4 py-5 shadow sm:p-6'>
-			<h2>Gender</h2>
+			<h2 className='text-2xl font-bold text-primary-900'>Gender</h2>
 
 			<div className=''>
 				<DoughnutChart data={chartData} />

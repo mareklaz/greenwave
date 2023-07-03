@@ -1,13 +1,40 @@
 import { useState } from 'react';
-import { ChevronDownIcon } from '@heroicons/react/20/solid';
-import { Switch } from '@headlessui/react';
+import emailjs from 'emailjs-com';
 
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
 }
 
+emailjs.init(import.meta.env.VITE_EMAILJS_USERID);
+
 export default function Contact() {
-	const [agreed, setAgreed] = useState(false);
+	const [successMessage, setSuccessMessage] = useState('');
+	const [errorMessage, setErrorMessage] = useState('');
+
+	function sendEmail(e) {
+		e.preventDefault();
+
+		emailjs
+			.sendForm(
+				import.meta.env.VITE_EMAILJS_SERVICEID,
+				import.meta.env.VITE_EMAILJS_TEMPLATEID,
+				e.target,
+				import.meta.env.VITE_EMAILJS_USERID
+			)
+			.then(
+				(result) => {
+					console.log('Email successfully sent!');
+					setSuccessMessage('Message sent successfully.');
+					setErrorMessage('');
+					e.target.reset();
+				},
+				(error) => {
+					console.error('Error sending email:', error);
+					setErrorMessage('Error sending message.');
+					setSuccessMessage('');
+				}
+			);
+	}
 
 	return (
 		<div className='isolate bg-primary-50 px-6 py-24 sm:py-32 lg:px-8'>
@@ -22,7 +49,7 @@ export default function Contact() {
 					revenue.
 				</p>
 			</div>
-			<form action='#' method='POST' className='mx-auto mt-16 max-w-xl sm:mt-20'>
+			<form onSubmit={sendEmail} className='mx-auto mt-16 max-w-xl sm:mt-20'>
 				<div className='grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2'>
 					<div>
 						<label
@@ -103,31 +130,9 @@ export default function Contact() {
 							/>
 						</div>
 					</div>
-					<Switch.Group as='div' className='flex gap-x-4 sm:col-span-2'>
-						<div className='flex h-6 items-center'>
-							<Switch
-								checked={agreed}
-								onChange={setAgreed}
-								className={classNames(
-									agreed ? 'bg-secondary-600' : 'bg-primary-200',
-									'flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-primary-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-600'
-								)}>
-								<span className='sr-only'>Agree to policies</span>
-								<span
-									aria-hidden='true'
-									className={classNames(
-										agreed ? 'translate-x-3.5' : 'translate-x-0',
-										'h-4 w-4 transform rounded-full bg-primary-50 shadow-sm ring-1 ring-primary-900/5 transition duration-200 ease-in-out'
-									)}
-								/>
-							</Switch>
-						</div>
-						<Switch.Label className='text-sm leading-6 text-primary-600'>
-							By selecting this, you agree to our{' '}
-							<span className='font-semibold text-secondary-600'>privacy&nbsp;policy</span>.
-						</Switch.Label>
-					</Switch.Group>
 				</div>
+				{successMessage && <div className='mb-4 text-green-600'>{successMessage}</div>}
+				{errorMessage && <div className='mb-4 text-red-600'>{errorMessage}</div>}
 				<div className='mt-10'>
 					<button
 						type='submit'

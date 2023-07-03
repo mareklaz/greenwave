@@ -30,7 +30,7 @@ const ChartJs5 = () => {
 		datasets: [
 			{
 				type: 'line',
-				label: 'TOTAL IMPRESIONES',
+				label: 'CONVERTION RATE:',
 				data: datosLineas,
 				fill: false,
 
@@ -41,7 +41,7 @@ const ChartJs5 = () => {
 			},
 			{
 				type: 'bar',
-				label: 'TOTAL CO2 FOOTPRINT EMISSION',
+				label: 'TOTAL TRANSACTION',
 				data: datosBarras,
 				backgroundColor: '#68c193',
 
@@ -68,8 +68,7 @@ const ChartJs5 = () => {
 
 	return (
 		<div className='mt-6 rounded-lg border border-primary-100 bg-primary-50 px-4 py-5 shadow sm:p-6'>
-			<h2>Total Emission</h2>
-
+			<h2 className='text-2xl font-bold text-primary-900'>Convertion Rate</h2>
 			<div className='mt-6'>
 				<Bar data={data} options={options} />
 			</div>
