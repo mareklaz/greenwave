@@ -1,5 +1,9 @@
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid';
+<<<<<<< HEAD
 import element1 from '../../assets/api/element1.png';
+=======
+import img1 from '../../assets/api/section1img.png';
+>>>>>>> 3af638e43f93867ad45064b7a0b0960b4cce7533
 
 export default function Section1() {
 	return (
@@ -18,7 +22,12 @@ export default function Section1() {
 							</p>
 						</div>
 					</div>
+<<<<<<< HEAD
 					<img src={element1} alt='' />
+=======
+
+					<img src={img1} alt='' />
+>>>>>>> 3af638e43f93867ad45064b7a0b0960b4cce7533
 				</div>
 			</div>
 		</div>
