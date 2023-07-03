@@ -13,14 +13,13 @@ export default function DashboardContent() {
 			<DashboardStats />
 			<div className='mt-5'>
 				<h3 className='text-base font-semibold leading-6 text-primary-900'>Data</h3>
-				<ChartJs5 />
 				<ChartJs6 />
+				<ChartJs5 />
 				<dl className='mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3 '>
 					<ChartJs />
 					<ChartJs1 />
 					<ChartJs2 />
 				</dl>
-				<ChartJs4 />
 			</div>
 		</div>
 	);

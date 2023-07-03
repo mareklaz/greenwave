@@ -16,7 +16,7 @@ export default function DashboardStats() {
 		{
 			id: 1,
 			name: 'Tons of CO2',
-			stat: counter,
+			stat: '52,032',
 			icon: icon1,
 		},
 		{

@@ -40,7 +40,7 @@ export default function Step4() {
 								data-driven decisions, optimize your sustainability strategies.
 							</p>
 							<Link to='/dashboard' className='text-lg font-semibold text-primary-600'>
-								Learn more <span aria-hidden='true'>→</span>
+								Learn more about Dashboard <span aria-hidden='true'>→</span>
 							</Link>
 						</div>
 					</div>

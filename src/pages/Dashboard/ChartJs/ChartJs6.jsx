@@ -18,19 +18,19 @@ const ChartJs6 = () => {
 		'December',
 	];
 
-	const totalEmission = [36, 42, 24, 70, 18, 55, 92, 22, 26, 49, 61, 31];
+	const totalEmission = [32323, 34232, 38323, 23234, 48830, 53000, 62500, 0, 0, 0, 0, 0];
 
 	const data = {
 		labels: months,
 		datasets: [
 			{
 				label: 'TOTAL CO2 OFFSET',
-				backgroundColor: '#68c193',
+				backgroundColor: '#418b7b',
 				data: calculateOffsetData(totalEmission),
 			},
 			{
 				label: 'TOTAL CO2 FOOTPRINT EMISSIONS',
-				backgroundColor: '#186442',
+				backgroundColor: '#68c193',
 				data: totalEmission,
 			},
 		],
@@ -53,7 +53,9 @@ const ChartJs6 = () => {
 
 	return (
 		<div className='mt-6 rounded-lg border border-primary-100 bg-primary-50 px-4 py-5 shadow sm:p-6'>
-			<h2 className='text-2xl font-bold text-primary-900'>Emission</h2>
+			<div className='flex justify-between'>
+				<h2 className='text-2xl font-bold text-primary-900'>Emission</h2>
+			</div>
 
 			<div className='mt-6'>
 				<Bar data={data} options={options} />
