@@ -22,7 +22,7 @@ const ChartJs5 = () => {
 	const datosBarras = [500, 200, 150, 250, 300, 350, 200, 150, 250, 300, 350, 200];
 
 	// Datos de ejemplo para la gráfica de líneas
-	const datosLineas = [50, 25, 32, 16, 21, 55, 42, 26, 18, 52, 52, 32];
+	const datosLineas = [200, 25, 32, 16, 21, 55, 42, 26, 18, 52, 52, 32];
 
 	// Configuración del gráfico
 	const data = {
